@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(ThrownEnderpearl.class)
 public abstract class TpSoundMixin {
     @Inject(method = "onHit", at = @At("TAIL"))
-    private void tpsnd(HitResult pResult, CallbackInfo ci) {
+    private void tpsnd(HitResult pResult, CallbackInfo ci) throws InterruptedException {
         ThrownEnderpearl pearl = (ThrownEnderpearl) (Object) this;
         Entity entity = pearl.getOwner();
         if (entity instanceof Player) {
@@ -24,8 +24,9 @@ public abstract class TpSoundMixin {
             double x = player.getX();
             double y = player.getY();
             double z = player.getZ();
+            Thread.sleep(35);
 
-            pearl.level.playSound(null, x, y, z, SoundEvents.ENDERMAN_TELEPORT, SoundSource.PLAYERS, 1.0f, 1.0f);
+            pearl.level.playSound(null, x, y, z, SoundEvents.ILLUSIONER_MIRROR_MOVE, SoundSource.PLAYERS, 1.0f, 1.0f);
         }
 
     }
