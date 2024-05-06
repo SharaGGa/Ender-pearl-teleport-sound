@@ -24,7 +24,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
 version = '0.0.1a_01-1.18.2'
-group = 'mod.nero.tpsound' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = 'mod.nero.tpsound'
 archivesBaseName = 'tpsound'
 
 
