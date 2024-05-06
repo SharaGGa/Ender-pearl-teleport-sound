@@ -1,13 +1,13 @@
 {
   "required": true,
-  "package": "mod.nero.templatemodwithmixin.mixin",
+  "package": "mod.nero.tpsound.mixin",
   "mixins": [
-    "BlankMixin"
+    "TpSoundMixin"
 
   ],
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "BlankMixin"
+    "TpSoundMixin"
 
   ],
   "injectors": {
