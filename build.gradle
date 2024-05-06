@@ -24,8 +24,8 @@ apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
 version = '0.0.1a_01-1.18.2'
-group = 'mod.nero.templatemodwithmixin' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'templatemodwithmixin'
+group = 'mod.nero.tpsound' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'tpsound'
 
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -42,12 +42,12 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            property 'forge.enabledGameTestNamespaces', 'templatemodwithmixin'
+            property 'forge.enabledGameTestNamespaces', 'tpsound'
 
-            arg "-mixin.config=templatemodwithmixin.mixins.json"
+            arg "-mixin.config=tpsound.mixins.json"
 
             mods {
-                templatemodwithmixin {
+                tpsound {
                     source sourceSets.main
                 }
             }
@@ -60,10 +60,10 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            property 'forge.enabledGameTestNamespaces', 'templatemodwithmixin'
+            property 'forge.enabledGameTestNamespaces', 'tpsound'
 
             mods {
-                templatemodwithmixin {
+                tpsound {
                     source sourceSets.main
                 }
             }
@@ -76,10 +76,10 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            property 'forge.enabledGameTestNamespaces', 'templatemodwithmixin'
+            property 'forge.enabledGameTestNamespaces', 'tpsound'
 
             mods {
-                templatemodwithmixin {
+                tpsound {
                     source sourceSets.main
                 }
             }
@@ -92,10 +92,10 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'templatemodwithmixin', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'tpsound', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                templatemodwithmixin {
+                tpsound {
                     source sourceSets.main
                 }
             }
@@ -117,13 +117,13 @@ dependencies {
 }
 
 mixin {
-    add sourceSets.main, "templatemodwithmixin.mixins-refmap.json"
+    add sourceSets.main, "tpsound.mixins-refmap.json"
 }
 
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "templatemodwithmixin",
+                "Specification-Title"     : "tpsound",
                 "Specification-Vendor"    : "nero",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
@@ -132,10 +132,10 @@ jar {
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
                 "TweakClass": "org.spongepowered.asm.launch.MixinTweaker",
                 "TweakOrder": 0,
-                "MixinConfigs": "templatemodwithmixin.mixins.json"
+                "MixinConfigs": "tpsound.mixins.json"
         ])
     }
-    rename 'mixin.refmap.json', 'templatemodwithmixin.mixins.json'
+    rename 'mixin.refmap.json', 'tpsound.mixins.json'
 }
 
 jar.finalizedBy('reobfJar')
