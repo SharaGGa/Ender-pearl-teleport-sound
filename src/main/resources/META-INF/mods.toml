@@ -6,21 +6,21 @@ license="MIT"
 
 [[mods]] #mandatory
 
-modId="templatemodwithmixin" #mandatory
+modId="tpsound" #mandatory
 
 version="${file.jarVersion}" #mandatory
 
-displayName="Template Mod with Mixin" #mandatory
+displayName="Ender Pearl teleport sound" #mandatory
 
-logoFile="examplemod.png" #optional
+logoFile="icon.png" #optional
 
 authors="Nero" #optional
 
 description='''
-long Description
+Mod adds a teleportation sound when using Ender pearls, as in minecraft bedrock edition.
 '''
 
-[[dependencies.templatemodwithmixin]] #optional
+[[dependencies.tpsound]] #optional
 
     modId="forge" #mandatory
 
@@ -32,7 +32,7 @@ long Description
 
     side="BOTH"
 
-[[dependencies.templatemodwithmixin]]
+[[dependencies.tpsound]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.18.2,1.19)"
