@@ -1,0 +1,40 @@
+modLoader="javafml" #mandatory
+
+loaderVersion="[40,)" #mandatory
+
+license="MIT"
+
+[[mods]] #mandatory
+
+modId="templatemodwithmixin" #mandatory
+
+version="${file.jarVersion}" #mandatory
+
+displayName="Template Mod with Mixin" #mandatory
+
+logoFile="examplemod.png" #optional
+
+authors="Nero" #optional
+
+description='''
+long Description
+'''
+
+[[dependencies.templatemodwithmixin]] #optional
+
+    modId="forge" #mandatory
+
+    mandatory=true #mandatory
+
+    versionRange="[40,)" #mandatory
+
+    ordering="NONE"
+
+    side="BOTH"
+
+[[dependencies.templatemodwithmixin]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"

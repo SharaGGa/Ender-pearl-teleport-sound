@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "mod.nero.templatemodwithmixin.mixin",
+  "mixins": [
+    "BlankMixin"
+
+  ],
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "BlankMixin"
+
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "templatemodwithmixin.mixins-refmap.json"
+}
