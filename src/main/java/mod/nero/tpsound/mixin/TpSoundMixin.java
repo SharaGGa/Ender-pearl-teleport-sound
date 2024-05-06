@@ -26,7 +26,7 @@ public abstract class TpSoundMixin {
             double z = player.getZ();
             Thread.sleep(35);
 
-            pearl.level.playSound(null, x, y, z, SoundEvents.ILLUSIONER_MIRROR_MOVE, SoundSource.PLAYERS, 1.0f, 1.0f);
+            pearl.level.playSound(null, x, y, z, SoundEvents.ENDERMAN_TELEPORT, SoundSource.PLAYERS, 1.0f, 1.0f);
         }
 
     }
