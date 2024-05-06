@@ -13,5 +13,5 @@
   "injectors": {
     "defaultRequire": 1
   },
-  "refmap": "templatemodwithmixin.mixins-refmap.json"
+  "refmap": "tpsound.mixins-refmap.json"
 }
