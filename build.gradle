@@ -23,7 +23,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '0.0.1a_02-1.18.2-alt'
+version = '0.0.1b_01-1.18.2-alt'
 group = 'mod.nero.tpsound'
 archivesBaseName = 'tpsound'
 
