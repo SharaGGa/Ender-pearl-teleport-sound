@@ -1,6 +1,6 @@
 modLoader="javafml" #mandatory
 
-loaderVersion="[40,)" #mandatory
+loaderVersion="[47,)" #mandatory
 
 license="MIT"
 
@@ -26,7 +26,7 @@ Mod adds a teleportation sound when using Ender pearls, as in minecraft bedrock 
 
     mandatory=true #mandatory
 
-    versionRange="[40,)" #mandatory
+    versionRange="[47,)" #mandatory
 
     ordering="NONE"
 
@@ -35,6 +35,6 @@ Mod adds a teleportation sound when using Ender pearls, as in minecraft bedrock 
 [[dependencies.tpsound]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2,1.19)"
+    versionRange="[1.20.1,1.21)"
     ordering="NONE"
     side="BOTH"
